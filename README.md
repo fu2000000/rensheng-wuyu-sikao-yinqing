@@ -135,58 +135,16 @@ AI 不会马上告诉你该不该辞职，而是先追问“不适合”具体�
 
 ## 如何安装
 
-### 方式一：通过 God Agent 从 GitHub 安装
+这个项目提供的是一个通用的 Agent Skill。
 
-将本项目发布到 GitHub 后，在 God Agent 中使用 Skill 导入功能：
+常见的支持方式包括 Codex、Claude Code、WorkBuddy，以及其他兼容 Agent Skill / Markdown 指令的工具。不同工具的目录位置、导入命令和自动加载规则可能不同，请以对应工具的官方文档为准。
 
-1. 打开 Skill 管理或导入入口；
-2. 选择从 GitHub 导入；
-3. 输入本仓库地址，例如：
+### 方式一：从 GitHub 克隆或下载
 
-   ```text
-   https://github.com/<你的用户名>/<你的仓库名>
-   ```
+在 GitHub 项目页面选择 **Code → Download ZIP** 下载压缩包放入你是Agent里面进行安装。
 
-4. 在扫描结果中选择 `rensheng-wuyu-sikao-yinqing`；
-5. 确认安装；
-6. 安装完成后，重新开始一个对话，或在当前对话中重新加载可用 Skill。
+### 方式二：直接再Agent里面复制github项目地址，输入 帮我安装这个skill
 
-如果一个仓库包含多个 Skill，请在扫描结果中选择名称为 `rensheng-wuyu-sikao-yinqing` 的 Skill，而不是直接安装整个仓库。
-
-### 方式二：使用 Skill 管理功能导入
-
-如果你使用的是支持 Skill 管理的 God Agent 客户端，可以通过 Skill 导入功能指定 GitHub 仓库：
-
-```text
-导入 Skill：<你的 GitHub 仓库地址>
-```
-
-客户端会扫描仓库中的 Skill，并要求你选择和确认要安装的 Skill。请在确认前检查 `SKILL.md` 的内容、来源说明和权限范围。
-
-### 方式三：手动安装
-
-如果你的客户端支持手动管理 Skill，可以将本项目中的 Skill 目录复制到用户级 Skill 目录：
-
-```text
-~/.god-agent/skills/rensheng-wuyu-sikao-yinqing/
-```
-
-目录至少应包含：
-
-```text
-rensheng-wuyu-sikao-yinqing/
-└── SKILL.md
-```
-
-Windows 用户通常可以在以下位置找到对应目录：
-
-```text
-C:\Users\<你的用户名>\.god-agent\skills\rensheng-wuyu-sikao-yinqing\
-```
-
-复制完成后，重新启动客户端或重新加载 Skill 列表。
-
-> 不同客户端版本的 Skill 目录和导入入口可能略有不同。优先使用客户端提供的 GitHub 导入功能。
 
 ## 如何使用
 
@@ -306,22 +264,6 @@ Skill 的目标是改善思考过程，不是保证结论一定正确。对于�
 ### 重要决定优先做小实验
 
 对于可逆的问题，优先通过低成本实验获得真实反馈，不要仅凭 AI 的分析做不可逆决定。
-
-## 项目结构
-
-建议的 GitHub 仓库结构如下：
-
-```text
-rensheng-wuyu-sikao-yinqing/
-├── README.md
-└── rensheng-wuyu-sikao-yinqing/
-    └── SKILL.md
-```
-
-其中：
-
-- `README.md`：项目介绍、安装方法和使用说明；
-- `rensheng-wuyu-sikao-yinqing/SKILL.md`：实际被 God Agent 加载的 Skill 内容。
 
 ## 来源与致谢
 
