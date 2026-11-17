@@ -145,6 +145,10 @@ AI 不会马上告诉你该不该辞职，而是先追问“不适合”具体�
 
 ### 方式二：直接再Agent里面复制github项目地址，输入 帮我安装这个skill
 
+```
+帮我安装这个skill:https://github.com/fu2000000/rensheng-wuyu-sikao-yinqing
+```
+
 
 ## 如何使用
 
